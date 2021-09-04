@@ -1,0 +1,202 @@
+:root {
+  --red-line: #ea5454;
+  --green-line: #44d3d2;
+  --orange-line: #fcae4a;
+  --blue-line: #549ef2;
+  --txt-color: #4d4f62;
+  --bg-color: #f2f2f2;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  background-color: var(--bg-color);
+}
+.main-page {
+  margin-top: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-intro {
+  width: 311px;
+  height: 161px;
+  margin-bottom: 76px;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.17px;
+  font-weight: 200;
+  text-align: center;
+}
+
+#title-opacity{
+    opacity: 0.5;
+}
+
+
+#title-bold {
+  font-weight: 600;
+}
+
+#intro-site {
+  width: 311px;
+  height: 71px;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 0.1px;
+  line-height: 25px;
+  font-weight: 400;
+  opacity: 0.5;
+  margin-top: 16px;
+}
+h2 {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 27px;
+  margin-left: 28px;
+}
+
+.card-component {
+  width: 311px;
+  height: 222px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: 0px 0px 15px rgb(131, 166, 210, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-component:hover{
+    transform: translateY(5px) scale(1.05);
+}
+#supervisor {
+  border-top: 3.55px solid var(--green-line);
+}
+
+#team-builder {
+  border-top: 3.55px solid var(--red-line);
+}
+
+#karma {
+  border-top: 3.55px solid var(--orange-line);
+}
+
+#calculator {
+  border-top: 3.55px solid var(--blue-line);
+}
+
+.card-image {
+  width: 57px;
+  height: 57px;
+  align-self: flex-end;
+  margin-top: 28px;
+  margin-right: 28px;
+}
+
+.card-text {
+  width: 254px;
+  font-size: 13px;
+  letter-spacing: 0.09px;
+  line-height: 23px;
+  opacity: 0.5;
+  margin-top: 1px;
+  margin-left: 29px;
+}
+
+.footer{
+    margin: 50px auto;
+text-align: center;
+    width: 300px;
+}
+
+@media screen and (min-width: 1440px) {
+
+    .main-page {
+margin-top: 80px;
+    }
+
+    .main-intro {
+        width: 540px;
+        height: 168px;
+        margin-bottom: 64px;
+    }
+    h1{
+        width: 444px;
+        height: 102px;
+        font-size: 36px;
+margin: auto;
+    }
+
+    #intro-site{
+        width: 540px;
+        font-size: 15px;
+        margin-top: 0;
+    }
+
+    .cards{
+        width: 1100px;
+        height: 530px;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    #supervisor{
+       margin-right: 30px;
+    }
+
+    #team-builder{
+        margin-bottom: 30px;
+    }
+    #calculator{
+        margin-left: 30px;
+    }
+
+    .card-component{
+        width: 350px ;
+        height: 250px;
+        margin: 0;
+      
+    }
+
+    .card-text {
+        width: 286px;
+        font-size: 13px;
+        letter-spacing: 0.09px;
+        line-height: 23px;
+        opacity: 0.5;
+        margin-top: 6px;
+        margin-left: 32px;
+      }
+
+      h2 {
+        margin-top: 32px;
+        margin-left: 32px;
+      }
+
+    .card-image {
+        width: 64px;
+        height: 64px;
+        margin-top: 32px;
+        margin-right: 32px;
+      }
+
+    .footer{
+        margin: 50px auto;
+text-align: center;
+        width: 400px;
+    }
+    
+}
